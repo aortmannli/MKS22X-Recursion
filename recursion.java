@@ -42,12 +42,13 @@ public class recursion{
      */
     public static int fib(int n){
       if (n < 0) throw new IllegalArgumentException(n+" is negative.");
+      if (n == 0) return 0;
       return fibT(0, 1, n);
     }
 
     public static int fibT(int a, int b, int n){
-      if (n == 0) return 0;
-
+      if (n == 0) return a;
+      return fibT(b, a+b, n-1);
     }
 
     public static ArrayList<Integer> makeAllSums(){
