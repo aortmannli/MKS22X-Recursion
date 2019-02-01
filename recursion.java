@@ -7,7 +7,21 @@ public class recursion{
     System.out.println("value:"+ 0.5 + "     square root:"+ sqrt(0.5,0.0001));
     System.out.println("value:"+ 0.1 + "     square root:"+ sqrt(0.1,0.0001));
 
-	}
+
+    //testing fib
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+
+    //testing makeAllSums
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+  	}
   /*You may write additional private methods */
 
     /*Recursively find the sqrt using Newton's approximation
@@ -52,5 +66,6 @@ public class recursion{
     }
 
     public static ArrayList<Integer> makeAllSums(){
+      if (n < 0) throw new IllegalArgumentException(n+" is negative.");
     }
 }
