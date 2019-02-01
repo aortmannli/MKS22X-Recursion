@@ -17,9 +17,9 @@ public class recursion{
   */
 
   public static double sqrt(double n, double tolerance) {
-        if (n < 0) throw new IllegalArgumentException(n+" is negative.");
-        return sqrtN(n, n/2, tolerance);
-    }
+    if (n < 0) throw new IllegalArgumentException(n+" is negative.");
+    return sqrtN(n, n/2, tolerance);
+  }
 
 
 	public static double sqrtN(double n, double guess, double tolerance) {
@@ -41,8 +41,13 @@ public class recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
+      if (n < 0) throw new IllegalArgumentException(n+" is negative.");
+      return fibT(0, 1, n);
+    }
+
+    public static int fibT(int a, int b, int n){
       if (n == 0) return 0;
-      if (n == 1) return 1;
+
     }
 
     public static ArrayList<Integer> makeAllSums(){
