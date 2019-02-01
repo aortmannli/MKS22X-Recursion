@@ -67,5 +67,12 @@ public class recursion{
 
     public static ArrayList<Integer> makeAllSums(){
       if (n < 0) throw new IllegalArgumentException(n+" is negative.");
+      ArrayList<Integer> sum;
+      if (n == 0){
+        sum = new ArrayList<>();
+        sums.add(0);
+      }else{
+        
+      }
     }
 }
