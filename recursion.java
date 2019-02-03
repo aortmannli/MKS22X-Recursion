@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class recursion{
   public static void main(String[] args){
     //testing sqr root
@@ -15,7 +17,9 @@ public class recursion{
     System.out.println(fib(12));
     System.out.println(fib(89));
 
+
     //testing makeAllSums
+    System.out.println(makeAllSums(3));
     /*System.out.println();
     System.out.println();
     System.out.println();
@@ -68,11 +72,17 @@ public class recursion{
 
     public static ArrayList<Integer> makeAllSums(int n){
       if (n < 0) throw new IllegalArgumentException(n+" is negative.");
-      ArrayList<Integer> current = new ArrayList<Integer>();
-
+      ArrayList<Integer> ans = new ArrayList<Integer>();
+      return makeAllSumsHelp(n, 0, ans);
     }
 
-    public static ArrayList<Integer> makeAllSumsHelp(int n, int sum, ArrayList<Integer> totals){
-      if (n == 0) return totals.add(sum);
+    public static ArrayList<Integer> makeAllSumsHelp(int n, int sum, ArrayList<Integer> ans){
+      if (n == 0){
+        ans.add(sum);
+      }else{
+        makeAllSumsHelp(n-1, sum+n, ans);
+        makeAllSumsHelp(n-1, sum, ans);
+      }
+      return ans;
     }
 }
