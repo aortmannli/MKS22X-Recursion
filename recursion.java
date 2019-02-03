@@ -9,18 +9,18 @@ public class recursion{
 
 
     //testing fib
-    System.out.println();
-    System.out.println();
-    System.out.println();
-    System.out.println();
-    System.out.println();
+    System.out.println(fib(0));
+    System.out.println(fib(1));
+    System.out.println(fib(10));
+    System.out.println(fib(12));
+    System.out.println(fib(89));
 
     //testing makeAllSums
+    /*System.out.println();
     System.out.println();
     System.out.println();
     System.out.println();
-    System.out.println();
-    System.out.println();
+    System.out.println();*/
   	}
   /*You may write additional private methods */
 
@@ -65,14 +65,14 @@ public class recursion{
       return fibT(b, a+b, n-1);
     }
 
-    public static ArrayList<Integer> makeAllSums(){
+
+    public static ArrayList<Integer> makeAllSums(int n){
       if (n < 0) throw new IllegalArgumentException(n+" is negative.");
-      ArrayList<Integer> sum;
-      if (n == 0){
-        sum = new ArrayList<>();
-        sums.add(0);
-      }else{
-        
-      }
+      ArrayList<Integer> current = new ArrayList<Integer>();
+
+    }
+
+    public static ArrayList<Integer> makeAllSumsHelp(int n, int sum, ArrayList<Integer> totals){
+      if (n == 0) return totals.add(sum);
     }
 }
