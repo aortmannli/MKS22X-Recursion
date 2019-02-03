@@ -3,29 +3,36 @@ import java.util.ArrayList;
 public class recursion{
   public static void main(String[] args){
     //testing sqr root
+    System.out.println("Testing sqrt");
 		System.out.println("value:"+ 7 + "     square root:"+ sqrt(7,0.0001));
     System.out.println("value:"+ 2 + "     square root:"+ sqrt(2,0.0001));
     System.out.println("value:"+ 4 + "     square root:"+ sqrt(4,0.0001));
     System.out.println("value:"+ 0.5 + "     square root:"+ sqrt(0.5,0.0001));
     System.out.println("value:"+ 0.1 + "     square root:"+ sqrt(0.1,0.0001));
 
+    System.out.println();
+    System.out.println();
 
     //testing fib
+    System.out.println("Testing fib");
     System.out.println(fib(0));
     System.out.println(fib(1));
     System.out.println(fib(10));
     System.out.println(fib(12));
     System.out.println(fib(89));
 
+    System.out.println();
+    System.out.println();
 
     //testing makeAllSums
+    System.out.println("Testing makeAllSums");
+    System.out.println(makeAllSums(0));
+    System.out.println(makeAllSums(1));
+    System.out.println(makeAllSums(2));
     System.out.println(makeAllSums(3));
-    /*System.out.println();
-    System.out.println();
-    System.out.println();
-    System.out.println();
-    System.out.println();*/
+    System.out.println(makeAllSums(4));
   	}
+
   /*You may write additional private methods */
 
     /*Recursively find the sqrt using Newton's approximation
